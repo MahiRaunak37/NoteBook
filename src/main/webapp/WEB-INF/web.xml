@@ -4,4 +4,44 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>SaveNoteServlet</servlet-name>
+  	<display-name>SaveNoteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlets.SaveNoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<display-name>DeleteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlets.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteNotesServlet</servlet-name>
+  	<display-name>DeleteNotesServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlets.DeleteNotesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateNoteServlet</servlet-name>
+  	<display-name>UpdateNoteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlets.UpdateNoteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SaveNoteServlet</servlet-name>
+  	<url-pattern>/SaveNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteNotesServlet</servlet-name>
+  	<url-pattern>/DeleteNotesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateNoteServlet</servlet-name>
+  	<url-pattern>/UpdateNoteServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

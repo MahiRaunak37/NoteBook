@@ -1,8 +1,9 @@
 package com.entities;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.Random;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -13,6 +14,8 @@ public class Note {
 	@Id
 	private int id;
 	private String title;
+	
+	@Column(length = 1500)
 	private String Content;
 	private Date addedDate;
 	public int getId() {
